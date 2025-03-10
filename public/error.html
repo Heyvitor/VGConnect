@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erro</title>
+</head>
+<body>
+  <h1>Erro</h1>
+  <p id="error-message"></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error') || 'Erro desconhecido';
+    document.getElementById('error-message').textContent = error === 'INVALID_GAME' ? 'Jogo inválido' : error === 'WALLET_NO_BALANCE' ? 'Saldo insuficiente' : 'Erro interno';
+  </script>
+</body>
+</html>
