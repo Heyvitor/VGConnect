@@ -7,7 +7,6 @@ dist/
 
 # Ignorar arquivos de configuração específicos do ambiente
 config.local.php
-.env
 
 # Ignorar arquivos gerados por editores de texto/IDEs
 .idea/
