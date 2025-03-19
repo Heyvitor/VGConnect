@@ -1,0 +1,20 @@
+# Ignorar arquivos de log
+*.log
+
+# Ignorar diretórios de build
+build/
+dist/
+
+# Ignorar arquivos de configuração específicos do ambiente
+config.local.php
+.env
+
+# Ignorar arquivos gerados por editores de texto/IDEs
+.idea/
+*.swp
+*~
+
+# Ignorar diretórios de dependências de projetos (Node.js, Python, etc.)
+node_modules/
+venv/
+__pycache__/
