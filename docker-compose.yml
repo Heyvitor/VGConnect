@@ -19,5 +19,4 @@ services:
       - DB_PORT=${DB_PORT}
       - JWT_SECRET=${JWT_SECRET}
       - NODE_ENV=${NODE_ENV}
-    command: npm start
     restart: always

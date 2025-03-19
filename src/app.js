@@ -28,6 +28,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Adicionar rota de healthcheck
+app.get('/', (req, res) => {
+  res.status(200).json({ status: 'ok', message: 'API está funcionando!' });
+});
+
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/games', gameRoutes);
 app.use('/api/hk1', hooksalsaRoutes);
